@@ -1,4 +1,7 @@
 @layer components {
+  body {
+    @apply font-Regular;
+  }
   .container {
     @apply w-full mx-auto px-4; /* موبایل → کل عرض */
   }

@@ -1,6 +1,6 @@
 import "./styles/style.css";
+import { router } from "./router.js";
 
-document.querySelector("#app").innerHTML = `
+const app = document.querySelector("#app");
 
-`;
-
+router(app);
