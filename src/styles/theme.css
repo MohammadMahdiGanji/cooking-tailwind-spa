@@ -1,0 +1,17 @@
+@import "./font.css";
+
+@theme {
+  /* custome color */
+  --color-primary: #e7fafe;
+  --color-secondary: rgba(0, 0, 0, 0.6);
+  --color-third: rgba(0, 0, 0, 0.05);
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  /* custome font */
+
+  --font-Regular: "Regular";
+  --font-Medium: "Medium";
+  --font-Bold: "Bold";
+  --font-SemiBold: "SemiBold";
+}

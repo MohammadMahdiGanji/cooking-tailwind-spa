@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Reguler";
+  src: url("../assets/font/ttf/Inter_18pt-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Medium";
+  src: url("../assets/font/ttf/Inter_18pt-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url("../assets/font/ttf/Inter_28pt-Bold.ttf");
+}
+
+@font-face {
+  font-family: "SemiBold";
+  src: url("../assets/font/ttf/Inter_18pt-SemiBold.ttf");
+}
