@@ -1,6 +1,12 @@
-export default function Blog() {
-  const title = document.createElement("h1");
-  title.textContent = "Blog Page";
+import CreateElement from "../../Component/CreateElement/CreateElement";
+import Append from "../../Component/Append/Append";
+import Header from "../../Component/Header/Header"
 
-  return title;
+export default function Blog() {
+  const blog = CreateElement({name:'div'})
+
+  const header = Header()
+
+  Append(blog,...[header])
+  return blog;
 }
