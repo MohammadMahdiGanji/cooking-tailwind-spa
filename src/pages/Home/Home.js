@@ -1,6 +1,11 @@
-export default function Home() {
-  const title = document.createElement("h1");
-  title.textContent = "Home Page";
+import CreateElement from "../../Component/CreateElement/CreateElement";
+import Header from "../../Component/Header.js/Header";
+import Append from "../../Component/Append/Append";
 
-  return title;
+export default function Home() {
+  const home = CreateElement({ name: "div" });
+
+  Append(home,Header())
+
+  return home;
 }

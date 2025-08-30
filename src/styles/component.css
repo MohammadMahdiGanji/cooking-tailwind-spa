@@ -1,0 +1,32 @@
+@layer components {
+  body {
+    @apply font-Regular;
+  }
+  .container {
+    @apply w-full mx-auto px-4; /* موبایل → کل عرض */
+  }
+}
+
+@media (min-width: 640px) {
+  .container {
+    @apply max-w-[640px]; /* sm = 640px */
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    @apply max-w-[768px]; /* md = 768px */
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    @apply max-w-[1024px]; /* lg = 1024px */
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    @apply max-w-[1280px]; /* xl = 1280px */
+  }
+}
