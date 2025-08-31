@@ -33,7 +33,7 @@ export default function Header() {
   };
 
   try {
-    header = CreateElement({ name: "header", style: "py-8" });
+    header = CreateElement({ name: "header", style: "py-8 border-b-1 border-[rgba(0,0,0,0.1)] shadow-[0px_2px_10px_rgba(0,0,0,0.07)]" });
     container = CreateElement({ name: "div", style: "container" });
     navigation = CreateElement({
       name: "nav",

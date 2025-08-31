@@ -8,7 +8,7 @@ export default function MenuDesktop(list) {
   try {
     menuDesktop = CreateElement({
       name: "ul",
-      style: "hidden gap-6 sm:flex",
+      style: "hidden gap-6 md:gap-10 sm:flex",
     });
     const path = location.pathname;
 

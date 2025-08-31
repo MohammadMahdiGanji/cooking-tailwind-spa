@@ -6,7 +6,7 @@ export default function Recipe() {
   const recipe = CreateElement({name:"div"})
   const header = Header()
 
-  Append(recipe, ...[recipe])
+  Append(recipe, ...[header])
 
   return header;
 }
