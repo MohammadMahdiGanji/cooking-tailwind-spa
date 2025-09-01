@@ -1,9 +1,11 @@
 import CreateElement from "../CreateElement/CreateElement";
 import Append from "../Append/Append";
+import Link from "../LInk/Link";
 
 export default function Button({ title = "", icon = "", style="" } = {}) {
+  
   const button = CreateElement({
-    name: "button",
+    name: "a",
     title: title,
     style: "",
     style:
