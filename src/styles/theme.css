@@ -14,4 +14,7 @@
   --font-Medium: "Medium";
   --font-Bold: "Bold";
   --font-SemiBold: "SemiBold";
+
+  
+  --breakpoint-xs: 400px;
 }

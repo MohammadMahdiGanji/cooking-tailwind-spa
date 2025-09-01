@@ -7,6 +7,13 @@
   }
 }
 
+@media (min-width: 400px) {
+  .container {
+    @apply max-w-full;
+  }
+}
+
+
 @media (min-width: 640px) {
   .container {
     @apply max-w-[640px]; /* sm = 640px */
