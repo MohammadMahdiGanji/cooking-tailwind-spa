@@ -33,15 +33,15 @@ export default function Categories() {
     categoriesHeaderTitle = CreateElement({
       name: "h2",
       title: "Categories",
-      style: "font-SemiBold text-[20px]",
+      style: "font-SemiBold text-[20px] xs:text-[26px] sm:text-[35px] md:text[45px]",
     });
     categoriesHeaderBtn = CreateElement({
       name: "a",
       title: "View All Categories",
-      style: "bg-primary px-5 py-3 rounded-xl cursor-pointer text-xs",
+      style: "bg-primary px-5 py-3 rounded-xl cursor-pointer text-xs xs:text-sm font-SemiBold md:px-7 md:py-4",
     });
     categoriesHeaderLink = Link({
-      nt: categoriesHeaderBtn,
+      element: categoriesHeaderBtn,
       href: "ldl",
     });
     wrapper = CreateElement({
