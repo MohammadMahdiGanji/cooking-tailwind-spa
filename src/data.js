@@ -14,6 +14,10 @@ import recipes7Src from "./assets/images/recipes7.png";
 import recipes8Src from "./assets/images/recipes8.png";
 import likeSrc from "./assets/icon/heartlike.svg";
 import disLikeSrc from "./assets/icon/heartdislike.svg";
+import post1 from "./assets/images/svg/Post1.svg";
+import post2 from "./assets/images/svg/Post2.svg";
+import post3 from "./assets/images/svg/Post3.svg";
+import post4 from "./assets/images/svg/Post4.svg";
 
 export const dataMenu = [
   { title: "Home", link: "/" },
@@ -104,3 +108,5 @@ export const dataRecipes = [
     icon: disLikeSrc,
   },
 ];
+
+export const dataSocial = [post1, post2, post3, post4];

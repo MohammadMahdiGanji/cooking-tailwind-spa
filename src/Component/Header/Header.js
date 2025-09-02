@@ -5,7 +5,7 @@ import MenuDesktop from "../MenuDesktop/MenuDesktop";
 import logoSrc from "../../assets/icon/logo.svg";
 import facebookSrc from "../../assets/icon/facebook.svg";
 import twitterSrc from "../../assets/icon/twitter.svg";
-import instagramSrc from "../../assets/icon/instagram.svg";
+import instagramdarkSrc from "../../assets/icon/instagramdark.svg";
 import MenuMobile from "../MenuMobile/MenuMobile.js";
 
 export default function Header() {
@@ -54,7 +54,7 @@ export default function Header() {
     });
     instagram = CreateElement({
       name: "img",
-      src: instagramSrc,
+      src: instagramdarkSrc,
     });
     menuDesktop = MenuDesktop(dataMenu);
     barBox = CreateElement({

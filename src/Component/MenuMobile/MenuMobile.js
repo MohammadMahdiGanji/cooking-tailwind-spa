@@ -3,7 +3,7 @@ import Append from "../Append/Append";
 import logosrc from "../../assets/icon/logo.svg";
 import facebookSrc from "../../assets/icon/facebook.svg";
 import twitterSrc from "../../assets/icon/twitter.svg";
-import instagramSrc from "../../assets/icon/instagram.svg";
+import instagramdarkSrc from "../../assets/icon/instagramdark.svg";
 import Link from "../LInk/Link";
 
 export default function MenuMobile(list) {
@@ -15,9 +15,9 @@ export default function MenuMobile(list) {
     twitterImg,
     instagramImg;
 
-    const toggleMenu = () => {
-      boxMenuMobile.classList.toggle('active-menu')
-    }
+  const toggleMenu = () => {
+    boxMenuMobile.classList.toggle("active-menu");
+  };
 
   try {
     boxMenuMobile = CreateElement({
@@ -35,7 +35,7 @@ export default function MenuMobile(list) {
     socials = CreateElement({ name: "div", style: "flex gap-5 mt-10" });
     facebookImg = CreateElement({ name: "img", src: facebookSrc });
     twitterImg = CreateElement({ name: "img", src: twitterSrc });
-    instagramImg = CreateElement({ name: "img", src: instagramSrc });
+    instagramImg = CreateElement({ name: "img", src: instagramdarkSrc });
 
     list.forEach((item) => {
       const menuMobileItem = CreateElement({ name: "li" });
@@ -57,5 +57,5 @@ export default function MenuMobile(list) {
     throw new Error(`error menu mobule ${err.message}`);
   }
 
-  return {boxMenuMobile,toggleMenu};
+  return { boxMenuMobile, toggleMenu };
 }
