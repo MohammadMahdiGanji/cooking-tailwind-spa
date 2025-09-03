@@ -7,7 +7,7 @@ export default function Button({ title = "", icon = "", style = "" } = {}) {
     title: title,
     style: `bg-black inline-flex text-white py-2 cursor-pointer px-4 text-xs 
       font-SemiBold rounded-xl gap-2 cursor-pinter items-center
-      xs:text-sm xs:px-8 xs:py-3 lg:gap-5 ${style}`,
+      xs:text-sm xs:px-8 xs:py-4 lg:gap-5 ${style}`,
   });
   const img = CreateElement({ name: "img", src: icon, style: "w-6" });
 
