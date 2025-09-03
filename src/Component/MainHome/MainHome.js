@@ -6,18 +6,24 @@ import Chef from "../../Component/Chef/Chef";
 import Social from "../Social/Social";
 import Delicious from "../Delicious/Delicious";
 import Inbox from "../Inbox/Inbox";
+import NotFound from "../NotFound/NotFound";
 
 export default function MainHome() {
-  const main = CreateElement({ name: "main" });
+  let main, categories, recipesHome, chef, social, delicious, inbox;
+  try {
+    main = CreateElement({ name: "main" });
+    categories = Categories();
+    recipesHome = RecipesHome();
+    chef = Chef();
+    social = Social();
+    delicious = Delicious(8);
+    inbox = Inbox();
 
-  const categories = Categories();
-  const recipesHome = RecipesHome();
-  const chef = Chef();
-  const social = Social();
-  const delicious = Delicious(8);
-  const inbox = Inbox();
-
-  Append(main, ...[categories, recipesHome, chef, social, delicious, inbox]);
+    Append(main, ...[categories, recipesHome, chef, social, delicious, inbox]);
+  } catch (err) {
+    NotFound(`Error Main Home Section ${err.message}`);
+    throw new Error(`Error Main Home Section ${err.message}`)
+  }
 
   return main;
 }
