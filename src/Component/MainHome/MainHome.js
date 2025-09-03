@@ -9,7 +9,9 @@ import Inbox from "../Inbox/Inbox";
 import NotFound from "../NotFound/NotFound";
 
 export default function MainHome() {
+  // create variables
   let main, categories, recipesHome, chef, social, delicious, inbox;
+  // create elements
   try {
     main = CreateElement({ name: "main" });
     categories = Categories();
@@ -19,6 +21,7 @@ export default function MainHome() {
     delicious = Delicious(8);
     inbox = Inbox();
 
+    // add elements
     Append(main, ...[categories, recipesHome, chef, social, delicious, inbox]);
   } catch (err) {
     NotFound(`Error Main Home Section ${err.message}`);
