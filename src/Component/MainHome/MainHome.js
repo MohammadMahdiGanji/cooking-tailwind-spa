@@ -4,6 +4,7 @@ import Categories from "../Categories/Categories";
 import RecipesHome from "../RecipesHome/RecipesHome";
 import Chef from "../../Component/Chef/Chef";
 import Social from "../Social/Social";
+import Delicious from "../Delicious/Delicious";
 
 export default function MainHome() {
   const main = CreateElement({ name: "main" });
@@ -12,8 +13,9 @@ export default function MainHome() {
   const recipesHome = RecipesHome();
   const chef = Chef();
   const social = Social();
+  const delicious = Delicious(8);
 
-  Append(main, ...[categories, recipesHome, chef, social]);
+  Append(main, ...[categories, recipesHome, chef, social, delicious]);
 
   return main;
 }

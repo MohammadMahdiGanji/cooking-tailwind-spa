@@ -13,7 +13,7 @@ export default function Social() {
     // create elements
     social = CreateElement({
       name: "section",
-      style: "bg-gradient-to-t from-primary to-white mt-28",
+      style: "bg-gradient-to-t from-primary to-white mt-28 pb-15",
     });
 
     container = CreateElement({ name: "div", style: "container" });
@@ -36,7 +36,7 @@ export default function Social() {
     wrapper = CreateElement({
       name: "div",
       style: `grid gap-y-10 grid-cols-12 place-items-center 
-        gap-5 mt-8 sm:mt-12 md:mt-18 lx:gap-10`,
+        sm:gap-5 mt-8 sm:mt-12 md:mt-18 lx:gap-10`,
     });
 
     btnBox = CreateElement({ name: "div", style: "flex " });
@@ -53,10 +53,10 @@ export default function Social() {
     Append(social, container);
     Append(btnBox, link);
     Append(container, ...[title, caption, wrapper, btnBox]);
-    dataSocial.forEach((social) => {
+    dataSocial.forEach((item) => {
       const post = CreateElement({
         name: "img",
-        src: social,
+        src: item,
         style:
           "w-full max-w-[400px] col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3",
         alt: "social",

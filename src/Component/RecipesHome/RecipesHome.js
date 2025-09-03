@@ -41,7 +41,7 @@ export default function RecipesHome() {
         img: recipe.img,
         caption: recipe.title,
         icon: recipe.icon,
-        color:
+        style:
           "bg-gradient-to-t from-primary to-white col-span-12 sm:col-span-6 lg:col-span-4",
       });
 

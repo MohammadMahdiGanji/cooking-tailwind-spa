@@ -8,7 +8,7 @@ export default function Card({
   img = "",
   caption = "",
   icon = "",
-  color = "",
+  style = "",
 } = {}) {
   // Create Variables
   let Card,
@@ -28,7 +28,7 @@ export default function Card({
     // Create Elements
     Card = CreateElement({
       name: "div",
-      style: `p-4 ${color} relative rounded-2xl pb-6 max-w-[400px]`,
+      style: `p-4 ${style} relative rounded-2xl pb-6 w-full max-w-[400px]`,
     });
     image = CreateElement({
       name: "img",
@@ -44,7 +44,7 @@ export default function Card({
     title = CreateElement({
       name: "h3",
       title: caption,
-      style: "font-SemiBold mt-5 md:text-[22px]",
+      style: "font-SemiBold mt-5",
     });
 
     box = CreateElement({

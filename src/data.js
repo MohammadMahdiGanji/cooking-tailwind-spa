@@ -18,6 +18,14 @@ import post1 from "./assets/images/svg/Post1.svg";
 import post2 from "./assets/images/svg/Post2.svg";
 import post3 from "./assets/images/svg/Post3.svg";
 import post4 from "./assets/images/svg/Post4.svg";
+import delicious1Src from "./assets/images/delicious1.png";
+import delicious2Src from "./assets/images/delicious2.png";
+import delicious3Src from "./assets/images/delicious3.png";
+import delicious4Src from "./assets/images/delicious4.png";
+import delicious5Src from "./assets/images/delicious5.png";
+import delicious6Src from "./assets/images/delicious6.png";
+import delicious7Src from "./assets/images/delicious7.png";
+import delicious8Src from "./assets/images/delicious8.png";
 
 export const dataMenu = [
   { title: "Home", link: "/" },
@@ -110,3 +118,46 @@ export const dataRecipes = [
 ];
 
 export const dataSocial = [post1, post2, post3, post4];
+
+export const dataDelicious = [
+  {
+    img: delicious1Src,
+    title: "Mixed Tropical Fruit Salad with Superfood Boosts ",
+    icon: likeSrc,
+  },
+  {
+    img: delicious2Src,
+    title: "Big and Juicy Wagyu Beef Cheeseburger",
+    icon: disLikeSrc,
+  },
+  {
+    img: delicious3Src,
+    title: "Healthy Japanese Fried Rice with Asparagus",
+    icon: disLikeSrc,
+  },
+  {
+    img: delicious4Src,
+    title: "Cauliflower Walnut Vegetarian Taco Meat",
+    icon: likeSrc,
+  },
+  {
+    img: delicious5Src,
+    title: "Rainbow Chicken Salad with Almond Honey Mustard Dressing",
+    icon: disLikeSrc,
+  },
+  {
+    img: delicious6Src,
+    title: "Barbeque Spicy Sandwiches with Chips ",
+    icon: disLikeSrc,
+  },
+  {
+    img: delicious7Src,
+    title: "Firecracker Vegan Lettuce Wraps - Spicy! ",
+    icon: likeSrc,
+  },
+  {
+    img: delicious8Src,
+    title: "Chicken Ramen Soup with Mushroom ",
+    icon: disLikeSrc,
+  },
+];
