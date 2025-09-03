@@ -25,7 +25,7 @@ export default function MainHome() {
     Append(main, ...[categories, recipesHome, chef, social, delicious, inbox]);
   } catch (err) {
     NotFound(`Error Main Home Section ${err.message}`);
-    throw new Error(`Error Main Home Section ${err.message}`)
+    throw new Error(`Error Main Home Section ${err.message}`);
   }
 
   return main;

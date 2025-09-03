@@ -3,12 +3,12 @@ import Append from "../Append/Append";
 import { renderView } from "../renderView/renderView";
 import Link from "../LInk/Link";
 
-export default function MenuDesktop(list) {
+export default function MenuDesktop({list = "", style=""} = {}) {
   let menuDesktop;
   try {
     menuDesktop = CreateElement({
       name: "ul",
-      style: "hidden gap-6 md:gap-10 sm:flex",
+      style: `${style}`,
     });
     const path = location.pathname;
 

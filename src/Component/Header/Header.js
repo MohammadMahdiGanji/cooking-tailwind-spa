@@ -24,16 +24,19 @@ export default function Header() {
     barBox,
     bar;
 
-    const {boxMenuMobile, toggleMenu} = MenuMobile(dataMenu);
-    
+  const { boxMenuMobile, toggleMenu } = MenuMobile(dataMenu);
 
   const openMenu = () => {
     bar.classList.toggle("active-bar");
-    toggleMenu()
+    toggleMenu();
   };
 
   try {
-    header = CreateElement({ name: "header", style: "py-8 border-b-1 border-[rgba(0,0,0,0.1)] shadow-[0px_2px_10px_rgba(0,0,0,0.07)]" });
+    header = CreateElement({
+      name: "header",
+      style:
+        "py-8 border-b-1 border-[rgba(0,0,0,0.1)] shadow-[0px_2px_10px_rgba(0,0,0,0.07)]",
+    });
     container = CreateElement({ name: "div", style: "container" });
     navigation = CreateElement({
       name: "nav",
@@ -56,7 +59,10 @@ export default function Header() {
       name: "img",
       src: instagramdarkSrc,
     });
-    menuDesktop = MenuDesktop(dataMenu);
+    menuDesktop = MenuDesktop({
+      list: dataMenu,
+      style: "hidden gap-6 md:gap-10 sm:flex ",
+    });
     barBox = CreateElement({
       name: "div",
       style: `w-[35px] h-[50px] flex justify-center items-center
@@ -72,7 +78,6 @@ export default function Header() {
     before:absolute before:w-full before:h-1 before:bg-black before:-translate-y-2.5 before:rounded-xl before:duration-250
     before:transition-all before:duration-250`,
     });
-
   } catch (err) {
     console.error("خطا در ساخت  عناصر", err.message);
     return CreateElement({

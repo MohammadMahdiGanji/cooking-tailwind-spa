@@ -3,6 +3,7 @@ import Append from "../../Component/Append/Append";
 import Header from "../../Component/Header/Header";
 import LandingHome from "../../Component/LandinHome/LandinHome";
 import MainHome from "../../Component/MainHome/MainHome";
+import Footer from "../../Component/Footer/Footer";
 
 export default function Home() {
   const home = CreateElement({ name: "div" });
@@ -10,8 +11,9 @@ export default function Home() {
   const header = Header();
   const landing = LandingHome();
   const mainHome = MainHome();
+  const footer = Footer();
 
-  Append(home, ...[header, landing, mainHome]);
+  Append(home, ...[header, landing, mainHome, footer]);
 
   return home;
 }
