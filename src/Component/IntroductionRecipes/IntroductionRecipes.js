@@ -54,10 +54,10 @@ export default function IntroductionRecupes() {
     printBox,
     printText,
     printIcon,
-    shaereWrapper,
-    shaereBox,
-    shaereText,
-    shaereIcon;
+    shareWrapper,
+    shareBox,
+    shareText,
+    shareIcon;
 
   try {
     // create elements
@@ -132,17 +132,17 @@ export default function IntroductionRecupes() {
       style: "text-center text-xs xs:text-sm md:text-base",
     });
 
-    shaereWrapper = CreateElement({ name: "div", style: "inline-block" });
-    shaereBox = CreateElement({
+    shareWrapper = CreateElement({ name: "div", style: "inline-block" });
+    shareBox = CreateElement({
       name: "div",
       style: "bg-primary inline-block p-4 rounded-full",
     });
-    shaereText = CreateElement({
+    shareText = CreateElement({
       name: "p",
       title: "SHARE",
       style: "text-center text-xs xs:text-sm md:text-base",
     });
-    shaereIcon = CreateElement({ name: "img", src: shaereSrc });
+    shareIcon = CreateElement({ name: "img", src: shaereSrc });
 
     // add elements
     Append(IntroductionRecipes, container);
@@ -150,13 +150,13 @@ export default function IntroductionRecupes() {
     Append(header, ...[headerContent, headerBox]);
     Append(headerContent, ...[title, headerList]);
     Append(headerList, ...[headerUser, prepTime, cookTime, chicken]);
-    Append(headerBox, ...[printWrapper, shaereWrapper]);
+    Append(headerBox, ...[printWrapper, shareWrapper]);
     Append(headerUser, ...[headerUserImg, headerUserBox]);
     Append(headerUserBox, ...[headerUserCaption, headerUserText]);
     Append(printBox, printIcon);
     Append(printWrapper, ...[printBox, printText]);
-    Append(shaereBox, shaereIcon);
-    Append(shaereWrapper, ...[shaereBox, shaereText]);
+    Append(shareBox, shareIcon);
+    Append(shareWrapper, ...[shareBox, shareText]);
   } catch (err) {
     NotFound(`Error introduction Section ${err}`);
     throw new Error(`Error introduction Section ${err}`);
