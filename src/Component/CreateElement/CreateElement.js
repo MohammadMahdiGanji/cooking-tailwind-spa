@@ -9,6 +9,7 @@ export default function CreateElement(object) {
     eventCallback = () => {},
     alt = "",
     type = "",
+    poster = "",
     placeholder = "",
   } = object;
 
@@ -23,8 +24,9 @@ export default function CreateElement(object) {
       typeof eventCallback === "function" &&
       element.addEventListener(event, eventCallback);
     alt && name === "img" && element.setAttribute("alt", alt);
-    name === "input" && type &&element.setAttribute("type", type)
+    name === "input" && type && element.setAttribute("type", type);
     placeholder && element.setAttribute("placeholder", placeholder);
+    name == "video" && element.setAttribute("poster", poster);
   } catch (err) {
     throw new Error(`error Create element ${err.message}`);
   }

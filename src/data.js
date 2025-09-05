@@ -161,3 +161,11 @@ export const dataDelicious = [
     icon: disLikeSrc,
   },
 ];
+
+export const dataRecipeInformation = [
+  { title: "Calories", info: "219.9 kcal" },
+  { title: "Total Fat", info: "10.7 g" },
+  { title: "Protein", info: "7.9 g" },
+  { title: "Carbohydrate", info: "22.3 g" },
+  { title: "Cholesterol", info: "37.4 mg" },
+];
