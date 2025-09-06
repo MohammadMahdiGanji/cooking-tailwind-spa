@@ -27,7 +27,10 @@ import delicious6Src from "./assets/images/delicious6.png";
 import delicious7Src from "./assets/images/delicious7.png";
 import delicious8Src from "./assets/images/delicious8.png";
 import tickSrc from "./assets/icon/tick.svg";
-import circleSrc from "./assets/icon/circle.svg";
+import recipe5Src from "./assets/images/recipes5.png";
+import recipe8Src from "./assets/images/recipes8.png";
+import recipe7Src from "./assets/images/recipes7.png";
+
 
 export const dataMenu = [
   { title: "Home", link: "/" },
@@ -174,8 +177,33 @@ export const dataRecipeInformation = [
 
 export const dataDish = [
   { title: "Lorem ipsum dolor sit amet", icon: tickSrc },
-  { title: "Lorem ipsum dolor sit amet", icon: "", active: false },
-  { title: "Lorem ipsum dolor sit amet", icon: "", active: true },
-  { title: "Lorem ipsum dolor sit amet", icon: "", active: true },
-  { title: "Lorem ipsum dolor sit amet", icon: "", active: true },
+  { title: "Lorem ipsum dolor sit amet", icon: "" },
+  { title: "Lorem ipsum dolor sit amet", icon: "" },
+  { title: "Lorem ipsum dolor sit amet", icon: "" },
+  { title: "Lorem ipsum dolor sit amet", icon: "" },
+];
+
+export const dataSauce = [
+  { title: "Lorem ipsum dolor sit amet", icon: "" },
+  { title: "Lorem ipsum dolor sit amet", icon: "" },
+  { title: "Lorem ipsum dolor sit amet", icon: "" },
+  { title: "Lorem ipsum dolor sit amet", icon: "" },
+];
+
+export const dataOtherRecipe = [
+  {
+    img: recipe5Src,
+    title: "Chicken Meatball with Creamy Chees...",
+    text: "By Andreas Paula",
+  },
+  {
+    img:recipe8Src,
+    title: "The Creamiest Creamy Chicken an...",
+    text: "By Andreas Paula",
+  },
+  {
+    img: recipe7Src,
+    title: "The Best Easy One Pot Chicken and Rice",
+    text: "By Andreas Paula",
+  },
 ];
