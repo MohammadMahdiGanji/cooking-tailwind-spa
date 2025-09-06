@@ -8,32 +8,32 @@ export default function Ingredient({ title = "", data = "" } = {}) {
   caption = CreateElement({
     name: "h3",
     title: title,
-    style: "font-SemiBold text-[24px]",
+    style: "font-SemiBold text-center xs:text-[20px] sm:text-left lg:text-base lg:text-[25px]",
   });
   list = CreateElement({ name: "div", style: `` });
 
   data.forEach((i) => {
     item = CreateElement({
       name: "div",
-      style: `flex items-center gap-3 py-5 border-b-2 border-[rgba(0,0,0,0.05)]`,
+      style: `flex items-center justify-center gap-3 py-5 border-b-2 border-[rgba(0,0,0,0.05)] sm:justify-start`,
     });
 
     if (i.icon) {
       iconBox = CreateElement({
         name: "div",
-        style: `w-7 h-7 bg-black flex items-center justify-center rounded-full`,
+        style: `w-4 h-4 bg-black flex items-center justify-center rounded-full`,
       });
-      itemIcon = CreateElement({ name: "img", src: i.icon });
-      itemText = CreateElement({ name: "del", title: i.title, style:"text-secondary" });
+      itemIcon = CreateElement({ name: "img", src: i.icon, style:'w-2' });
+      itemText = CreateElement({ name: "del", title: i.title, style:"text-secondary text-xs xs:text-sm lg:text-base" });
 
       Append(iconBox, itemIcon);
     } else {
       iconBox = CreateElement({
         name: "div",
-        style: `w-7 h-7 rounded-full border-2 border-[rgba(0,0,0,0.2)]`,
+        style: `w-4 h-4 rounded-full border-2 border-[rgba(0,0,0,0.2)]`,
       });
 
-      itemText = CreateElement({ name: "span", title: i.title });
+      itemText = CreateElement({ name: "span", title: i.title, style:"text-xs xs:text-sm sm:text-base" });
     }
 
     Append(item, ...[iconBox, itemText]);

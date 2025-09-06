@@ -10,28 +10,29 @@ export default function OtherRecipe({ title = "", data = "" } = {}) {
     // create Elements
     otherRecipe = CreateElement({
       name: "div",
-      style: `flex flex-col gap-y-6`,
+      style: `flex flex-col gap-y-6 w-full max-w-[300px] mx-auto`,
     });
-    caption = CreateElement({ name: "h2", title: title });
+    caption = CreateElement({ name: "h2", title: title, style:`font-Bold mt-10 text-center 
+    xs:text-[20px] sm:mt-0  sm:text-left lg:text-[30px] xl:text-[35px]` });
 
     Append(otherRecipe, ...[caption]);
     data.forEach((item) => {
-      box = CreateElement({ name: "div", style: `flex gap-2` });
+      box = CreateElement({ name: "div", style: `flex gap-2 justify-center` });
       img = CreateElement({
         name: "img",
         src: item.img,
-        style: `max-w-[100px] rounded-lg`,
+        style: `max-w-[100px] rounded-lg xs:max-w-[135px]`,
       });
       wrapper = CreateElement({ name: "div" });
       boxCaption = CreateElement({
         name: "h4",
         title: item.title,
-        style: `font-SemiBold text-xs line-clamp-2 mb-2`,
+        style: `font-SemiBold text-xs line-clamp-2 mb-2 xs:text-sm`,
       });
       text = CreateElement({
         name: "p",
         title: item.text,
-        style: `text-xs text-secondary`,
+        style: `text-xs text-secondary xs:text-sm`,
       });
 
       // add elements
