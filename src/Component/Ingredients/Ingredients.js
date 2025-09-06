@@ -68,7 +68,7 @@ export default function Ingredients() {
     Append(sectionRecipe, ...[otherRecipe, foodImg]);
   } catch (err) {
     NotFound(`Error Ingredient component ${err.message}`);
-    throw new Error(`Error Ingredient component ${err.message}`);
+    throw new Error(`Error Ingredient section ${err.message}`);
   }
 
   return ingredients;
