@@ -16,7 +16,7 @@ function time({ title = "", icon = "", text = "" } = {}) {
   timeElem = CreateElement({
     name: "div",
     style:
-      "inline-flex gap-3 items-center py-6 col-span-12 sm:col-span-6 sm:py-0 lg:col-span-3 lg:px-10",
+      "inline-flex gap-3 items-center py-6 col-span-12 sm:col-span-6 sm:py-0 lg:col-span-3 lg:px-10 ",
   });
   img = CreateElement({ name: "img", src: icon });
   box = CreateElement({ name: "div" });

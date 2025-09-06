@@ -26,6 +26,8 @@ import delicious5Src from "./assets/images/delicious5.png";
 import delicious6Src from "./assets/images/delicious6.png";
 import delicious7Src from "./assets/images/delicious7.png";
 import delicious8Src from "./assets/images/delicious8.png";
+import tickSrc from "./assets/icon/tick.svg";
+import circleSrc from "./assets/icon/circle.svg";
 
 export const dataMenu = [
   { title: "Home", link: "/" },
@@ -168,4 +170,12 @@ export const dataRecipeInformation = [
   { title: "Protein", info: "7.9 g" },
   { title: "Carbohydrate", info: "22.3 g" },
   { title: "Cholesterol", info: "37.4 mg" },
+];
+
+export const dataDish = [
+  { title: "Lorem ipsum dolor sit amet", icon: tickSrc },
+  { title: "Lorem ipsum dolor sit amet", icon: "", active: false },
+  { title: "Lorem ipsum dolor sit amet", icon: "", active: true },
+  { title: "Lorem ipsum dolor sit amet", icon: "", active: true },
+  { title: "Lorem ipsum dolor sit amet", icon: "", active: true },
 ];
