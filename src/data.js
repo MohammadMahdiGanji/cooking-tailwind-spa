@@ -31,6 +31,13 @@ import recipe5Src from "./assets/images/recipes5.png";
 import recipe8Src from "./assets/images/recipes8.png";
 import recipe7Src from "./assets/images/recipes7.png";
 import directionSrc from "./assets/images/direction.png";
+import user1Src from "./assets/images/user1.png";
+import blog1Src from "./assets/images/blog1.png"
+import blog2Src from "./assets/images/blog2.png"
+import blog3Src from "./assets/images/blog3.png"
+import blog4Src from "./assets/images/blog4.png"
+import blog5Src from "./assets/images/blog5.png"
+import blog6Src from "./assets/images/blog6.png"
 
 export const dataMenu = [
   { title: "Home", link: "/" },
@@ -208,7 +215,7 @@ export const dataOtherRecipe = [
   },
 ];
 
-export const  dataDirection = [
+export const dataDirection = [
   {
     title: "1. Lorem ipsum dolor sit amet ",
     description:
@@ -226,5 +233,56 @@ export const  dataDirection = [
     description:
       "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
     img: "",
+  },
+];
+
+export const dataArticle = [
+  {
+    blogImg: blog1Src,
+    title: "Crochet Projects for Noodle Lovers",
+    text: "Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ",
+    userIcon: user1Src,
+    name: "Wade Warren",
+    date: "12 November 2021",
+  },
+  {
+    blogImg: blog2Src,
+    title: "10 Vegetarian Recipes To Eat This Month",
+    text: "Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ",
+    userIcon: user1Src,
+    name: "Robert Fox",
+    date: "12 November 2021",
+  },
+  {
+    blogImg: blog3Src,
+    title: "Full Guide to Becoming a Professional Chef",
+    text: "Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ",
+    userIcon: user1Src,
+    name: "Dianne Russell",
+    date: "12 November 2021",
+  },
+  {
+    blogImg: blog4Src,
+    title: "Simple & Delicious Vegetarian Lasagna",
+    text: "Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ",
+    userIcon: user1Src,
+    name: "Leslie Alexander",
+    date: "12 November 2021",
+  },
+  {
+    blogImg: blog5Src,
+    title: "Plantain and Pinto Stew with Aji Verde",
+    text: "Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ",
+    userIcon: user1Src,
+    name: "Courtney Henry",
+    date: "12 November 2021",
+  },
+  {
+    blogImg: blog6Src,
+    title: "We’re Hiring a Communications Assistant!",
+    text: "Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ",
+    userIcon: user1Src,
+    name: "Albert Flores",
+    date: "12 November 2021",
   },
 ];
