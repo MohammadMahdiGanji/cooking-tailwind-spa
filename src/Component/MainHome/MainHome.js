@@ -18,7 +18,11 @@ export default function MainHome() {
     recipesHome = RecipesHome();
     chef = Chef();
     social = Social();
-    delicious = Delicious(8);
+    delicious = Delicious({
+      count: 8,
+      caption: "Try this delicious recipeto make your day",
+      text: "Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim ",
+    });
     inbox = Inbox();
 
     // add elements
