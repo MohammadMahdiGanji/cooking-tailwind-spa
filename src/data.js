@@ -30,7 +30,7 @@ import tickSrc from "./assets/icon/tick.svg";
 import recipe5Src from "./assets/images/recipes5.png";
 import recipe8Src from "./assets/images/recipes8.png";
 import recipe7Src from "./assets/images/recipes7.png";
-
+import directionSrc from "./assets/images/direction.png";
 
 export const dataMenu = [
   { title: "Home", link: "/" },
@@ -197,7 +197,7 @@ export const dataOtherRecipe = [
     text: "By Andreas Paula",
   },
   {
-    img:recipe8Src,
+    img: recipe8Src,
     title: "The Creamiest Creamy Chicken an...",
     text: "By Andreas Paula",
   },
@@ -205,5 +205,26 @@ export const dataOtherRecipe = [
     img: recipe7Src,
     title: "The Best Easy One Pot Chicken and Rice",
     text: "By Andreas Paula",
+  },
+];
+
+export const  dataDirection = [
+  {
+    title: "1. Lorem ipsum dolor sit amet ",
+    description:
+      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+    img: directionSrc,
+  },
+  {
+    title: "2. Lorem ipsum dolor sit amet ",
+    description:
+      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+    img: "",
+  },
+  {
+    title: "3. Lorem ipsum dolor sit amet  ",
+    description:
+      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+    img: "",
   },
 ];
