@@ -5,19 +5,30 @@ import Footer from "../../Component/Footer/Footer";
 import ContactContent from "../../Component/ContactContent/ContactContent";
 import Inbox from "../../Component/Inbox/Inbox";
 import Delicious from "../../Component/Delicious/Delicious";
+import NotFound from "../../Component/NotFound/NotFound";
 
 export default function Contact() {
-  const contact = CreateElement({ name: "div" });
-  const header = Header();
-  const contactContent = ContactContent();
-  const inbox = Inbox();
-  const footer = Footer();
-  const delicious = Delicious({
-    count: 4,
-    caption: "Check out the delicious recipe",
-  });
+  // create variables
+  let contact, header, contactContent, inbox, footer, delicious;
 
-  Append(contact, ...[header, contactContent, inbox, delicious, footer]);
+  try {
+    // create elements
+    contact = CreateElement({ name: "div" });
+    header = Header();
+    contactContent = ContactContent();
+    inbox = Inbox();
+    footer = Footer();
+    delicious = Delicious({
+      count: 4,
+      caption: "Check out the delicious recipe",
+    });
+
+    // aadd elements
+    Append(contact, ...[header, contactContent, inbox, delicious, footer]);
+  } catch (err) {
+    NotFound(`Error in content page ${err.message}`);
+    throw new Error(`Error in content page ${err.message}`);
+  }
 
   return contact;
 }
