@@ -4,7 +4,7 @@ import Append from "../../Component/Append/Append";
 import Footer from "../../Component/Footer/Footer";
 import ContactContent from "../../Component/ContactContent/ContactContent";
 import Inbox from "../../Component/Inbox/Inbox";
-
+import Delicious from "../../Component/Delicious/Delicious";
 
 export default function Contact() {
   const contact = CreateElement({ name: "div" });
@@ -12,8 +12,12 @@ export default function Contact() {
   const contactContent = ContactContent();
   const inbox = Inbox();
   const footer = Footer();
-  
-  Append(contact, ...[header, contactContent, inbox, footer]);
+  const delicious = Delicious({
+    count: 4,
+    caption: "Check out the delicious recipe",
+  });
+
+  Append(contact, ...[header, contactContent, inbox, delicious, footer]);
 
   return contact;
 }
